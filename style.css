@@ -18,16 +18,14 @@
 	text-align: center;
 }
 .index {
-	/*background-image: radial-gradient(to bottom, , );*/
-	background: linear-gradient(to bottom, #03191a,#033d24);
-	/*background-color: #000;*/
-    font-size: 18px;
 
-    background-size: auto;
-    background-repeat: no-repeat;
-    height: 1000px;
-    color: white;
-    font-family: Arial, helvatica, sans-serif;
+	background: linear-gradient(to bottom, #03191a,#033d24);
+    	font-size: 18px;
+	background-size: auto;
+	background-repeat: no-repeat;
+	height: 1000px;
+	color: white;
+	font-family: Arial, helvatica, sans-serif;
 }
 
 
