@@ -37,9 +37,6 @@
 	align-items: center;
 	justify-content: center;
 }
-.container.buttons a {
-	text-decoration: none;
-}
 .container .buttons img {
 	border-radius: 50%;
 	float: left;
