@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;800&display=swap");
 
 html {
   box-sizing: border-box;
@@ -34,11 +34,11 @@ html {
 
 :root {
   --base-font-size: 1rem;
-  --base-padding: .5em;
-  --base-margin: .5em;
+  --base-padding: 0.5em;
+  --base-margin: 0.5em;
   --base-border-radius: 20px;
   --base-line-ht: 1.5;
-  --base-gap: .5rem;
+  --base-gap: 0.5rem;
 
   --font-stack-nunito: "Nunito", sans-serif;
   --font-wt-regular: 400;
@@ -63,15 +63,15 @@ html {
   :root {
     --body-bg-color: hsl(var(--unbleached-silk-color));
     --btn-bg-color: hsl(var(--brick-red-color));
-    --heading-color: hsl(var(--deepspace-sparkle-color), .8);
+    --heading-color: hsl(var(--deepspace-sparkle-color), 0.8);
     --text-color: hsl(var(--sunray-light-color));
   }
 }
 
-
 body {
   min-height: inherit;
-  font: var(--font-wt-regular, 400) var(--base-font-size, 1rem)/var(--base-line-ht, 1.5) var(--font-stack-nunito, "Nunito", sans-serif);
+  font: var(--font-wt-regular, 400) var(--base-font-size, 1rem) /
+    var(--base-line-ht, 1.5) var(--font-stack-nunito, "Nunito", sans-serif);
   background-color: var(--body-bg-color);
 }
 
@@ -97,8 +97,8 @@ img {
 
 .btn {
   background-color: var(--btn-bg-color);
-  padding-block: var(--base-padding, .5em);
-  padding-inline: calc(var(--base-padding, .5em) * 3);
+  padding-block: var(--base-padding, 0.5em);
+  padding-inline: calc(var(--base-padding, 0.5em) * 3);
 }
 
 /* ------------------ layout ------------------ */
@@ -136,38 +136,36 @@ img {
 }
 
 .gap-1 {
-  gap: var(--base-gap, .5rem);
+  gap: var(--base-gap, 0.5rem);
 }
 
 .gap-2 {
-  gap: calc(var(--base-gap, .5rem) * 2);
+  gap: calc(var(--base-gap, 0.5rem) * 2);
 }
 
 .gap-3 {
-  gap: calc(var(--base-gap, .5rem) * 3);
+  gap: calc(var(--base-gap, 0.5rem) * 3);
 }
 
 .gap-4 {
-  gap: calc(var(--base-gap, .5rem) * 4);
+  gap: calc(var(--base-gap, 0.5rem) * 4);
 }
 
 .gap-6 {
-  gap: calc(var(--base-gap, .5rem) * 6);
+  gap: calc(var(--base-gap, 0.5rem) * 6);
 }
 
 /* ------------ Avatar Wrapper Styling ------------ */
 .avatar {
   --drop-shadow-color: var(--unbleached-silk-color);
-  --hue-rotate-angle: 0deg;
   width: 7.5rem;
   border-radius: 50%;
-  filter: hue-rotate(var(--hue-rotate-angle)) contrast(200%) saturate(200%) drop-shadow(0 0 10px hsl(var(--drop-shadow-color), .7));
+  filter: drop-shadow(0 0 7px hsl(var(--drop-shadow-color), 0.7));
 }
 
 @media (prefers-color-scheme: light) {
   .avatar {
     --drop-shadow-color: var(--brick-red-color);
-    --hue-rotate-angle: -40deg;
   }
 }
 
@@ -182,15 +180,16 @@ img {
 }
 
 .social__btn:hover {
-  --btn-shadow-color-1: hsl(var(--deepspace-sparkle-color), .75);
+  --btn-shadow-color-1: hsl(var(--deepspace-sparkle-color), 0.75);
   --btn-shadow-color-2: hsl(var(--unbleached-silk-color));
-  box-shadow: 12px 12px 1px var(--btn-shadow-color-1), 6px 6px 1px var(--btn-shadow-color-2);
+  box-shadow: 12px 12px 1px var(--btn-shadow-color-1),
+    6px 6px 1px var(--btn-shadow-color-2);
 }
 
 @media (prefers-color-scheme: light) {
   .social__btn:hover {
-    --btn-shadow-color-1: hsl(var(--brick-red-color), .4);
-    --btn-shadow-color-2: hsl(var(--brick-red-color), .7);
+    --btn-shadow-color-1: hsl(var(--brick-red-color), 0.4);
+    --btn-shadow-color-2: hsl(var(--brick-red-color), 0.7);
   }
 }
 
